@@ -23,3 +23,11 @@
 - Abrir gitBash
 - "cd Desktop" ó lugar designado a clonar
 - "git clone" + pegar el link 
+
+## Firebase
+- Se crea proyecto
+- Database--> realtime database
+- "Empezar como prueba"
+- Ir consola , copiar el link
+
+- Link: https://dbcase-cc785.firebaseio.com/
