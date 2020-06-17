@@ -31,3 +31,8 @@
 - Ir consola , copiar el link
 
 - Link: https://dbcase-cc785.firebaseio.com/
+
+## Bootstrap
+Agregamos la dependencia de bootstrap
+
+    $ npm i bootstrap
