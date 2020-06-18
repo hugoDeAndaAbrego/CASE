@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react'
-
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import PerfilList from '../components/PerfilList';
 
-const Perfil = () => {
+const PerfilContainer = () => {
     const [perfils, setPerfils] = useState({});
-    const ENDPOINT = 'https://to-do-devf-1c224.firebaseio.com/perfil.json';
+    const ENDPOINT = 'https://dbcase-cc785.firebaseio.com/perfil.json';
 
     const getPerfil = () => {
         axios.get(ENDPOINT)
@@ -22,11 +21,11 @@ const Perfil = () => {
             <div className="container">
                 <div className="card">
                     <h6>Lista perfil</h6>
-                    <PerfilList perfils={perfils} />
+                    <PerfilList perfils={perfils} getPerfil={getPerfil} />
                 </div>
             </div>
         </div>
     )
 }
 
-export default Perfil
+export default PerfilContainer
