@@ -2,38 +2,6 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useHistory, Link } from 'react-router-dom';
 
-// const MenuForm = () => {
-//     const ENDPOINT = 'https://dbcase-cc785.firebaseio.com/perfil.json';
-
-//     const [form, setForm] = useState({
-//         nombre: '',
-//         done: false
-//     });
-
-
-//     const handleForm = (e) => {
-//         setForm({
-//             ...form,
-//             [e.target.id]: e.target.value
-//         });
-//     };
-
-
-
-
-// const CreatePerfil = () => {
-//         if (form.nombre !== '') {
-//             axios.post(ENDPOINT, form)
-//                 .then((result) => history.push('/'))
-//                 .catch((error) => ('Ocurrio un error al guardar: ' + error));
-//         } else {
-//             alert('Ingresar el nombre');
-//         }
-//     }
-// }
-// ---------------------------------------------------------------------------------------------
-
-
 const MenuForm = () => {
 
 
