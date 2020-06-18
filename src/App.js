@@ -1,10 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-
-import Menu from './containers/Menu';
-import NavTitulo from './components/navTitulo';
-import MenuForm from './components/MenuForm';
-
+import Perfil from './containers/Perfil';
+import Master from './containers/layout/Master';
 import './App.css';
 
 function App() {
@@ -12,11 +9,8 @@ function App() {
     <BrowserRouter>
      <NavTitulo />
       <Switch>
-
-        <Route exact path="/" component={Menu} />
-        <Route exact path="/nuevoMenu" component={MenuForm} />
-
-
+        <Route exact path="/" component={Master} />
+        <Route exact path="/perfil" component={Perfil} />
       </Switch>
     </BrowserRouter> 
 

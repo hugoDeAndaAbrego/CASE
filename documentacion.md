@@ -33,6 +33,7 @@
 - Link: https://dbcase-cc785.firebaseio.com/
 
 ## Bootstrap
-Agregamos la dependencia de bootstrap
+Agregamos las dependencias de bootstrap y jquery
 
-    $ npm i bootstrap
+    $ npm i bootstrap jquery popper
+
