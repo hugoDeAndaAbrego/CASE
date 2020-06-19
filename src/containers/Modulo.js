@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import TableModulo from '../components/TableModulo';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 
 
@@ -14,8 +15,8 @@ const Modulo = () => {
         axios.get(ENDPOINT)
             .then((body) => setModulo(body.data))
             .catch((error) => alert('No puedo cargar los modulos'));
-
     }
+
 
     useEffect(() => {
         getModulo()
@@ -25,17 +26,17 @@ const Modulo = () => {
 
 
     return (
-        <div className="bg-ligth">
+    <div className="bg-ligth">
         <div className="container">
             <div className="card">
-                <h6>Tabla de Modulos</h6>
-                <TableModulo module={module} getModulo={getModulo} />
+                <h1 className="text-center">Tabla de Modulos</h1>
+                <TableModulo modules={module} getModulo={getModulo} />
+            </div>
+            <div className=''>
+                <Link to="/create-module" type="button" class="btn btn-primary">Crear Modulo</Link>
             </div>
         </div>
     </div>
-
-
-
     )
 }
 export default Modulo
