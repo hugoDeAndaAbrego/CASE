@@ -35,6 +35,7 @@ const MenuList = ({ cuentas }) => {
                             <td><button type="button" className="btn btn-danger" onClick={() => BorrarPerfil(cuentas[id].url)}>Borrar</button></td>
                         </tr>
                     )}
+
                 </tbody>
                 <tfoot>
                     <tr>
@@ -49,4 +50,4 @@ const MenuList = ({ cuentas }) => {
     )
 }
 
-export default MenuList
+export default MenuList;
